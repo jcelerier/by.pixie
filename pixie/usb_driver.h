@@ -80,7 +80,6 @@ struct Pixie
 int FTDI_SendData(FT_HANDLE device_handle, int label, uint8_t *data, int length);
 int FTDI_ReceiveData(FT_HANDLE device_handle, int label, uint8_t *data, unsigned int expected_length);
 std::unique_ptr<Pixie> createPixie(int device_num);
-void SendDMXToPixe(FT_HANDLE device_handle, uint8_t *);
 
 void FTDI_ClosePort(FT_HANDLE device_handle);
 void FTDI_PurgeBuffer(FT_HANDLE device_handle);
